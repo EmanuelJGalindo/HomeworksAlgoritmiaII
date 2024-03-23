@@ -1,0 +1,28 @@
+ 1- How does it benefit to us to have the pre-processing part in the string matching algorithms?
+            R.-Nos beneficia al permitirnos manejar y comparar cadenas de manera eficiente, reduciendo la complejidad temporal del proceso de comparación. Se basa de transformar las cadenas de entrada 	        en un formato que facilite una comparación de patrones más rápida. Haciendo más rápidas las operaciones posteriores de comparación de cadenas.
+2- Given a text string "T" and pattern string "P", demonstrate the steps involved in applying the Rabin-karp String Matching algorithm to find all occurrences of "P" in "T"
+            R.-Pasos:
+
+		a. Calcular el valor hash de la cadena patrón "P".
+		b. Deslizar la ventana del patrón sobre la cadena de texto "T", calculando el valor hash de cada subcadena de "T" igualando con el patrón.
+		c. Comparar el valor hash de la subcadena con el valor hash del patrón. Si son iguales, realizar una comparación completa para confirmar la coincidencia.
+		d. Si hay coincidencia, registrar el primero de la  subcadena como posible ocurrencia del patrón.
+		e. Continuar recorriendo la ventana hasta llegar al final de la cadena de texto.
+3- Why do we need to do a formal proof for a greedy algorithm ?
+            R.- Es necesario para garantizar su corrección y eficacia,los algoritmos greedy son basadas en criterios de optimización local sin tener en cuenta la solución óptima global. Sin una prueba 			 formal, se corre el riesgo de pasar por alto casos en los que el greedy podría dar la peor solución.
+
+4- Coco's theme party
+
+        Input: A number N, followed by n numbers that represent the number of presents to be repacked.
+        The next two lines, separated by space, are given the second line is the repacking time of every present by Alice, and the third line is delivering time by Delivery service.
+        Output: The shortest possible delivery time for all presents.
+        
+      a. Implement code:
+      Attached in the parctice
+      b. Identify if the problem can be solved by the greedy  algorithm
+         1.- Write a bdrief explanation of why you ahve chosen the greedy algorithm to solve the problem or why you chose another algorithm :
+       	  R.- El algoritmo utiliza una estrategia greedy para calcular el tiempo total mínimo de entrega. Ordena los tiempos de repackaging de mayor a menor y luego entrega los regalos en 			      función de este orden. La elección de un enfoque greedy se debe a que el tiempo de repackaging de cada regalo no se puede modificar, y se debe encontrar la mejor manera de 		      minimizar el tiempo total de entrega basándose en los tiempos de entrega disponibles. Al priorizar esperamos minimizar el tiempo total de entrega.
+         2.- What is the time complexity of your solution ?:
+	         R.-N es el número de regalos. Por la operación de ordenar los tiempos de repackaging utilizando el ordenamiento de Arrays. La iteración para calcular el tiempo total mínimo de entrega 		    tiene una complejidad de O(N), ya que se recorren los tiempos de repackaging y entrega una vez.
+         
+         
