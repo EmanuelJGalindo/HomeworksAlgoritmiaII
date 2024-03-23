@@ -1,3 +1,5 @@
+package SecondEvaluation;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
